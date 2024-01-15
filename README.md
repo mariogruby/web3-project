@@ -8,6 +8,7 @@
 * cart
 
 ### model beat (admin)
+* _id
 * title
 * url(mp3 cloudinary)
 * author
@@ -20,4 +21,23 @@
 * title
 * cover 
 * price
+
+## rutas backend
+* cart router.post 
+* beat router.get 
+* beat router.post (admin)
+* beat router.delete (admin)
+* beat route.put(admin)
+* tracks router.get 
+(cloudinary routes)
+### auth 
+* signup 
+* login 
+* edit user 
+* logout 
+
+### purchase route 
+* beats (array con objectId)
+* 
+
 
