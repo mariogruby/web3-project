@@ -1,5 +1,23 @@
 # web3-project
-# semen hjsefsefnsjf
-sfafagfafgs
-afafsr
-git
+## backend
+
+### model user
+* email
+* password
+* username
+* cart
+
+### model beat (admin)
+* title
+* url(mp3 cloudinary)
+* author
+* price
+* bmp
+* cover 
+
+### cart
+* productId
+* title
+* cover 
+* price
+
