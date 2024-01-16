@@ -23,13 +23,14 @@
 * price
 
 ## rutas backend
+* admin route (todo)
 * cart router.post 
 * beat router.get 
 * beat router.post (admin)
 * beat router.delete (admin)
 * beat route.put(admin)
-* tracks router.get 
-(cloudinary routes)
+* track router.get
+* tracksUpload router.get (cloudinary routes)
 ### auth 
 * signup 
 * login 
