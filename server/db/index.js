@@ -1,7 +1,9 @@
-const mongoose = require("mongoose");
+const mongoose = require("mongoose"); // requerimos mongoose
 
+// constante que se iguala a la variable de entorno MONGODB_URI donde está la direccion de la base de datos 
 const MONGO_URI = process.env.MONGODB_URI 
 
+// configuración básica de mongoose 
 mongoose
 .connect(MONGO_URI)
 .then((x) => {

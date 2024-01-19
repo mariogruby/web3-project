@@ -1,10 +1,11 @@
-const app = require("./app");
-require('dotenv').config();
+const app = require("./app"); // creamos la constante app que requiere a "./app"
+require('dotenv').config(); // requerimos las variables de entorno (.env)
 
 
-// ℹ️ Sets the PORT for our app to have access to it. If no env has been set, we hard code it to 5005
-const PORT = process.env.PORT || 5005;
+// constante PORT que se iguala al PORT que se encuentra en el .env, si no la encuentra, usa el puerto 5005
+const PORT = process.env.PORT || 5005; 
 
+// se usa la funcion .listen() que llama al PORT 
 app.listen(PORT, () => {
   console.log(`Server listening on http://localhost:${PORT}`);
 });
