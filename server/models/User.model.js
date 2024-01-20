@@ -16,6 +16,10 @@ const userSchema = new Schema(
             type: String,
             required: [true, "Name is required."],
         },
+        userRole: {
+            type: Number,
+            required: true,
+        }
     },
     {
         timestamps: true,
