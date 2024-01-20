@@ -5,40 +5,54 @@
 * email
 * password
 * username
-* cart
+* cart !!!
+* user role 
+* user image 
+* phone number 
+* verified ???
+- FALTAN MAS //
 
-### model beat (admin)
-* _id
-* title
-* url(mp3 cloudinary)
-* author
-* price
-* bmp
-* cover 
+### model track (admin)
+* track name 
+* track description
+* track price
+* track category
+* track images
+* track ratings reviews (array)
+* track status 
+* track url(mp3 cloudinary tipo string y unico)
+* track author (user id del productor -> admin por el momento)
+* track bmp
+* track cover ? // pendiente de definir 
 
-### cart
-* productId
-* title
-* cover 
-* price
+### cart model (el modelo de carrito lo incluimos dentro del modelo de user para evitar tocar las auth.routes)(client)
+* trackId 
+* track name 
+* track price
+
+### modelo de tracks comprados(nombre por definir)
+* alltracks(array con object id )
+* user (object id con el usuario que compro el track)
+* amount (precio pagado por los tracks)
+* transactionID (conectar al sistema web3.0 de solana y otros metodos, tipo string)
+* phone number del usuario 
+
+### customize model(admin)
+* por definir .............
+
+### modelo de categories 
+* categories name 
+* categoreis descrption 
+* categories image ?
+* categories status 
 
 ## rutas backend
-* admin route (todo)
-* cart router.post 
-* beat router.get 
-* beat router.post (admin)
-* beat router.delete (admin)
-* beat route.put(admin)
-* track router.get
-* tracksUpload router.get (cloudinary routes)
-### auth 
-* signup 
-* login 
-* edit user 
-* logout 
+* auth routes
+* user routes (admin and client)
+* track routes 
+* categories routes
+* admin routes 
+* payments routes (solana payments->confirmado, braintree o stripe)
 
-### purchase route 
-* beats (array con objectId)
-* 
 
 
