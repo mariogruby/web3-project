@@ -19,7 +19,34 @@ const userSchema = new Schema(
         userRole: {
             type: Number,
             required: true,
-        }
+        },
+        phoneNumber: {
+            type: Number,
+        },
+        userImage: {
+            type: String,
+            default: "user.png",
+        },
+        verified: {
+            type: String,
+            default: false,
+        },
+        cart: [
+            {
+                trackId: {
+                    type: String, // Cambia a String si el ID es una cadena
+                    // type: Schema.Types.ObjectId, // Usar ObjectId si es un ObjectId
+                },
+                trackName: {
+                    type: String,
+                    // required: true,
+                },
+                trackPrice: {
+                    type: Number,
+                    //required: true,
+                },
+            }
+        ],
     },
     {
         timestamps: true,

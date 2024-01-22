@@ -6,10 +6,10 @@ const app = express(); // constante app que llama a express
 app.use(express.json()); // usamos la funcion .use() de express.json() dentro de app
 app.use(cors()); // usamos los permisos de cors() dentro de la funcion .use() de app
 
-// se crea la constante authRoutes que requiere las rutas de autentificación,
-// usamos authRoutes dentro de app.use() y haciendo referencia a "/auth" para saber que son rutas de autentificación
 const authRoutes = require("./routes/auth.routes");
 app.use("/auth", authRoutes);
+// const profileRoutes = require("./routes/profile.routes");
+// app.use("/profile", profileRoutes);
 
 
 module.exports = app; 
