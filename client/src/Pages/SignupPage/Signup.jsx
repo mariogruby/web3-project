@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 // Importa el servicio de autenticación.
-import authService from "../../Service/AuthService/auth.service";
+import authService from "../../Service/auth.service";
 
 // Define el componente de la página de registro.
 function SignupPage() {

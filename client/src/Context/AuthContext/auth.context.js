@@ -1,6 +1,6 @@
 // Importaciones 
 import React, { useState, useEffect } from 'react';
-import authService from '../../Service/AuthService/auth.service';
+import authService from '../../Service/auth.service';
 
 // Crea un contexto de autenticación.
 const AuthContext = React.createContext();

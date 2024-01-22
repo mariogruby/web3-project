@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 // Importa el contexto de autenticación y el servicio de autenticación.
 import { AuthContext } from '../../Context/AuthContext/auth.context';
-import authService from '../../Service/AuthService/auth.service';
+import authService from '../../Service/auth.service';
 
 // Define el componente de la página de inicio de sesión.
 function LoginPage() {
