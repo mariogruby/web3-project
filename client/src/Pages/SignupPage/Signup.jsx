@@ -1,6 +1,6 @@
 // Importa React y los hooks necesarios de React Router.
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link, redirect } from "react-router-dom";
 
 // Importa el servicio de autenticación.
 import authService from "../../Service/auth.service";
@@ -14,7 +14,7 @@ function SignupPage() {
     const [errorMessage, setErrorMessage] = useState(undefined);
 
     // Obtiene la función de navegación desde React Router.
-    const navigate = useNavigate();
+    const navigate = redirect();
 
     // Handlers para actualizar los estados de correo electrónico, contraseña y nombre.
     const handleEmail = (e) => setEmail(e.target.value);
