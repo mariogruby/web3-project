@@ -1,6 +1,6 @@
 // Importa los hooks y componentes necesarios de React y React Router.
 import { useState, useContext } from 'react';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, redirect } from 'react-router-dom';
 
 // Importa el contexto de autenticación y el servicio de autenticación.
 import { AuthContext } from '../../Context/AuthContext/auth.context';
@@ -14,7 +14,7 @@ function LoginPage() {
     const [errorMessage, setErrorMessage] = useState(undefined);
 
     // Obtiene la función de navegación desde React Router.
-    const navigate = useNavigate();
+    const navigate = redirect();
 
     // Obtiene funciones y datos relacionados con la autenticación desde el contexto.
     const { storeToken, authenticateUser } = useContext(AuthContext);

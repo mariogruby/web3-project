@@ -6,12 +6,12 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { AuthContext } from '../../Context/AuthContext/auth.context';
 import { useContext } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { redirect } from 'react-router-dom';
 
 function NavScrollExample() {
 
   const { logOutUser } = useContext(AuthContext);
-  const navigate = useNavigate();
+  const navigate = redirect();
   function logOutHandler() {
     logOutUser()
     console.log(logOutUser, "user logged out")
@@ -81,12 +81,12 @@ function NavScrollExample() {
 // import MenuIcon from '@mui/icons-material/Menu';
 // import { AuthContext } from '../../Context/AuthContext/auth.context';
 // import { useContext } from 'react';
-// import { useNavigate } from 'react-router-dom';
+// import { redirect } from 'react-router-dom';
 
 // const ButtonAppBar = () => {
 
 //   const { logOutUser } = useContext(AuthContext);
-//   const navigate = useNavigate();
+//   const navigate = redirect();
 //   function logOutHandler() {
 //     logOutUser()
 //     console.log(logOutUser, "user logged out")
